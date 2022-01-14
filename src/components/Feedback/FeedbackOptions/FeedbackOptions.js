@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function FeedbackOptions({ onGood, onNeutral, onBad }) {
   return (
     <div>
@@ -13,3 +15,9 @@ export default function FeedbackOptions({ onGood, onNeutral, onBad }) {
     </div>
   );
 }
+
+FeedbackOptions.propTypes = {
+  onGood: PropTypes.func.isRequired,
+  onNeutral: PropTypes.func.isRequired,
+  onBad: PropTypes.func.isRequired,
+};
