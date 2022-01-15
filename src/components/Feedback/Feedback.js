@@ -4,6 +4,8 @@ import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
 import Section from "./Section/Section";
 import Notification from "./Notification/Notification";
 
+import { GlobalStyle } from "../constans/GlobalStyle";
+
 export default class Feedback extends Component {
   static defaultProps = {
     initialGood: 0,
@@ -68,6 +70,7 @@ export default class Feedback extends Component {
             />
           )}
         </Section>
+        <GlobalStyle />
       </div>
     );
   }
