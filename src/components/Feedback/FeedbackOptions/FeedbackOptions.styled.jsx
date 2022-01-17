@@ -20,6 +20,4 @@ padding: 3px;
         color: white;
         border: none;
     }
-`
-
-
+` 

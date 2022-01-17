@@ -45,6 +45,7 @@ export default class Feedback extends Component {
   render() {
     const total = this.state.good + this.state.neutral + this.state.bad;
     const positivePercentage = Math.round((this.state.good * 100) / total);
+    const { good, neutral, bad } = this.state;
 
     return (
       <div>
@@ -62,9 +63,9 @@ export default class Feedback extends Component {
 
           {total > 0 && (
             <Statistics
-              good={this.state.good}
-              neutral={this.state.neutral}
-              bad={this.state.bad}
+              good={good}
+              neutral={neutral}
+              bad={bad}
               total={total}
               positivePercentage={positivePercentage}
             />
